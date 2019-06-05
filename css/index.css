@@ -137,6 +137,7 @@ table {
 html,
 body {
   height: 100%;
+  background: #323267;
 }
 section {
   display: flex;
@@ -153,7 +154,7 @@ header {
   display: inline-block;
   width: 100%;
   padding: 1rem 0;
-  background: #e67e22;
+  background: #414158;
 }
 header nav {
   display: flex;
@@ -193,8 +194,12 @@ h4 {
 p {
   padding: 1rem 0;
 }
+#about {
+  background-color: #e6e6ff;
+}
 #about img {
-  max-width: 48%;
+  width: 30%;
+  height: 30%;
   padding-right: 2rem;
 }
 #skills {
@@ -208,6 +213,9 @@ p {
   flex: 1;
   justify-content: space-between;
 }
+.skills-column ul {
+  padding-top: 0.9rem;
+}
 .skills-column:last-child {
   margin-right: 0;
 }
@@ -220,7 +228,7 @@ p {
   display: inline-block;
 }
 button {
-  background: #e67e22;
+  background: #414158;
   padding: 0.5rem 2rem;
 }
 button a {
@@ -228,7 +236,8 @@ button a {
   text-decoration: none;
 }
 footer {
-  background: #e67e22;
+  background: #414158;
   width: 100%;
   border-top: none;
+  text-align: center;
 }

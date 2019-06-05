@@ -63,10 +63,12 @@ table {
 .wrapper {
   max-width: 800px;
   margin: 0 auto;
+
 }
 
 html, body {
   height: 100%;
+  background: @darkBg;
 }
 
 @padding: 3rem;
@@ -143,11 +145,12 @@ p {
 }
 
 #about {
+  background-color: @shaded;
 }
 
 #about img {
-
-  max-width: 48%;
+  width: 30%;
+  height: 30%;
   padding-right: 2rem;
 
 }
@@ -165,7 +168,10 @@ p {
 .skills-column {
   flex: 1;
   justify-content: space-between;
+}
 
+.skills-column ul {
+  padding-top: .9rem;
 }
 
 .skills-column:last-child {
@@ -195,11 +201,13 @@ footer {
   background: @accentColor;
   width: 100%;
   border-top: none;
+  text-align: center;
 }
 
-@accentColor: #e67e22;
-@primaryColor: #3498db;
+@accentColor: #414158;
+@darkBg: #323267;
 
+@shaded: #e6e6ff;
 
 
 
