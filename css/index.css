@@ -139,4 +139,59 @@ body {
 }
 section {
   padding: 3rem;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  line-height: 1.5rem;
+}
+header {
+  display: inline-block;
+  width: 100%;
+  padding: 1rem 0;
+  background: #1c2833;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  max-width: 90%;
+  margin: 0.5rem 5%;
+}
+header nav a {
+  color: white;
+  text-decoration: none;
+}
+/* Font styles */
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Bellefair', serif;
+}
+h1 {
+  font-size: 3rem;
+  padding: 3rem 0;
+  color: #1c2833;
+}
+h2 {
+  font-size: x-large;
+  color: #1c2833;
+}
+h3 {
+  font-size: large;
+}
+h4 {
+  font-style: italic;
+}
+p {
+  padding: 2rem 0;
+}
+#about {
+  display: flex;
+  margin: auto;
+}
+#about img {
+  border-radius: 50%;
+  max-width: 25%;
+}
+.about-right {
+  padding-left: 2rem;
 }
