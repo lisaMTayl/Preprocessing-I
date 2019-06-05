@@ -72,7 +72,7 @@ html, body {
 }
 
 @padding: 3rem;
-@border: 1px solid black;
+@border: 1px dashed black;
 
 section {
   display: flex;
@@ -127,6 +127,7 @@ h2 {
   font-size: 1.5rem;
   color: #1c2833;
   padding-bottom: 1rem;
+
 }
 
 h3 {
@@ -144,8 +145,14 @@ p {
   padding: 1rem 0;
 }
 
+.justColor {
+  background: @orange;
+  width: 100%;
+  padding: 2rem;
+}
+
 #about {
-  background-color: @shaded;
+ background-color: white;
 }
 
 #about img {
@@ -158,7 +165,12 @@ p {
 #skills {
   display: inline-block;
   width: 100%;
+  background-color: @shaded;
 
+}
+
+#education {
+  background-color: @shaded;
 }
 
 .flex-grid {
@@ -170,8 +182,13 @@ p {
   justify-content: space-between;
 }
 
+.skills-column h3 {
+  padding: 1rem 0 1rem 0;
+}
+
 .skills-column ul {
   padding-top: .9rem;
+  border-top: 1px solid navy;
 }
 
 .skills-column:last-child {
@@ -186,9 +203,11 @@ p {
 .school {
   display: inline-block;
 }
-
+#work {
+  background-color: @lightYellow;
+}
 button {
-  background: @accentColor;
+  background: @orange;
   padding: .5rem 2rem;
 }
 
@@ -202,12 +221,14 @@ footer {
   width: 100%;
   border-top: none;
   text-align: center;
+  color: white;
 }
 
 @accentColor: #414158;
 @darkBg: #323267;
-
-@shaded: #e6e6ff;
+@orange: #e68a00;
+@shaded: #ccccff;
+@lightYellow: #ffffcc;
 
 
 

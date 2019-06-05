@@ -143,7 +143,7 @@ section {
   display: flex;
   margin: auto;
   padding: 3rem;
-  border-bottom: 1px solid black;
+  border-bottom: 1px dashed black;
   line-height: 1.5rem;
   background: white;
 }
@@ -194,8 +194,13 @@ h4 {
 p {
   padding: 1rem 0;
 }
+.justColor {
+  background: #e68a00;
+  width: 100%;
+  padding: 2rem;
+}
 #about {
-  background-color: #e6e6ff;
+  background-color: white;
 }
 #about img {
   width: 30%;
@@ -205,6 +210,10 @@ p {
 #skills {
   display: inline-block;
   width: 100%;
+  background-color: #ccccff;
+}
+#education {
+  background-color: #ccccff;
 }
 .flex-grid {
   display: flex;
@@ -213,8 +222,12 @@ p {
   flex: 1;
   justify-content: space-between;
 }
+.skills-column h3 {
+  padding: 1rem 0 1rem 0;
+}
 .skills-column ul {
   padding-top: 0.9rem;
+  border-top: 1px solid navy;
 }
 .skills-column:last-child {
   margin-right: 0;
@@ -227,8 +240,11 @@ p {
 .school {
   display: inline-block;
 }
+#work {
+  background-color: #ffffcc;
+}
 button {
-  background: #414158;
+  background: #e68a00;
   padding: 0.5rem 2rem;
 }
 button a {
@@ -240,4 +256,5 @@ footer {
   width: 100%;
   border-top: none;
   text-align: center;
+  color: white;
 }
