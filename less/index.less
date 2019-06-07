@@ -13,47 +13,225 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
-	display: block;
+  display: block;
 }
+
 body {
-	line-height: 1;
+  line-height: 1;
 }
+
 ol, ul {
-	list-style: none;
+  list-style: none;
 }
+
+
 blockquote, q {
-	quotes: none;
+  quotes: none;
 }
+
 blockquote:before, blockquote:after,
 q:before, q:after {
-	content: '';
-	content: none;
+  content: '';
+  content: none;
 }
+
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 /* Set every element's box-sizing to border-box */
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+
 }
 
 html, body {
-    height: 100%;
+  height: 100%;
+  background: @darkBg;
 }
+
+@padding: 3rem;
+@border: 1px dashed black;
+
+section {
+  display: flex;
+  margin: auto;
+  padding: @padding;
+  border-bottom: @border;
+  line-height: 1.5rem;
+  background: white;
+}
+
+section:last-child {
+  border: none;
+}
+
+header {
+  display: inline-block;
+  width: 100%;
+  padding: 1rem 0;
+  background: @accentColor;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  max-width: 90%;
+  margin: .5rem 5%;
+
+
+}
+
+
+header nav a {
+  color: white;
+  text-decoration: none;
+
+}
+
+/****** Font styles ****/
+
+h1, h4 {
+  font-family: 'Bellefair', serif;
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 3rem;
+  padding: 3rem 0;
+  color: #1c2833;
+}
+
+h2 {
+  font-size: 1.5rem;
+  color: #1c2833;
+  padding-bottom: 1rem;
+
+}
+
+h3 {
+  font-family: 'Roboto', sans-serif;
+  font-size: large;
+  font-weight: bolder;
+  padding-bottom: .25rem;
+}
+
+h4 {
+  font-style: italic;
+}
+
+p {
+  padding: 1rem 0;
+}
+
+.justColor {
+  background: @orange;
+  width: 100%;
+  padding: 2rem;
+}
+
+#about {
+ background-color: white;
+}
+
+#about img {
+  width: 30%;
+  height: 30%;
+  padding-right: 2rem;
+
+}
+
+#skills {
+  display: inline-block;
+  width: 100%;
+  background-color: @shaded;
+
+}
+
+#education {
+  background-color: @shaded;
+}
+
+.flex-grid {
+  display: flex;
+}
+
+.skills-column {
+  flex: 1;
+  justify-content: space-between;
+}
+
+.skills-column h3 {
+  padding: 1rem 0 1rem 0;
+}
+
+.skills-column ul {
+  padding-top: .9rem;
+  border-top: 1px solid navy;
+}
+
+.skills-column:last-child {
+  margin-right: 0;
+}
+
+#education, #work {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.school {
+  display: inline-block;
+}
+#work {
+  background-color: @lightYellow;
+}
+button {
+  background: @orange;
+  padding: .5rem 2rem;
+}
+
+button a {
+  color: white;
+  text-decoration: none;
+}
+
+footer {
+  background: @accentColor;
+  width: 100%;
+  border-top: none;
+  text-align: center;
+  color: white;
+}
+
+@accentColor: #414158;
+@darkBg: #323267;
+@orange: #e68a00;
+@shaded: #ccccff;
+@lightYellow: #ffffcc;
+
+
+
+
+
 
